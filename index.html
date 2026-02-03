@@ -12,7 +12,8 @@
       <a href="https://www.google.pt">Google</a> |
       <a href="#good-movies">Good Movies</a> |
       <a href="pages/linksAndImages.html">Lobos</a> |
-      <a href="pages/subscriptionTable.html">Tabelas</a>
+      <a href="pages/subscriptionTable.html">Tabelas</a> |
+      <a href="pages/formularios.html">Formulários</a>
     </h6>
     <img
       width="150px"
@@ -25,14 +26,14 @@
 
     <!-- Formulários -->
     <form action="www.ourserver.pt">
-      <input type="text" placeholder="Nome:"  /><br>
+      <input type="text" placeholder="Nome:" required  /><br>
 
       <label for="task-date">Insira a data de entrega da tarefa:</label><br>
       <input id="task-date" type="datetime-local" /><br>
 
       <input type="number" /><br>
 
-      <input type="password" /><br>
+      <input type="password" minlength="6" /><br>
 
       <button type="submit">Submeter</button>
     </form>
