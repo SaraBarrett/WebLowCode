@@ -6,7 +6,7 @@
     <title>Web Low Code</title>
     <link rel="shortcut icon" href="images/internet.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h6 id="nav">
@@ -15,27 +15,39 @@
       <a href="#good-movies">Good Movies</a> |
       <a href="pages/linksAndImages.html">Lobos</a> |
       <a href="pages/subscriptionTable.html">Tabelas</a> |
-      <a href="pages/formularios.html">Formulários</a>
+      <a href="pages/formularios.html">Formulários</a> |
+      <a href="pages/cores.html"></a>
     </h6>
-    <img
-      width="150px"
-      height="100px"
-      src="images/5ea9a2c7-bd2e-46b0-b858-701f9cfbd7b1.png"
-      alt="banner"
-    />
-    <!-- isto é um título que é mostrado na página web -->
-    <h2>Olá Mundo!</h2>
+    <!-- box de imagem -->
+    <div id="image-box">
+      <img
+        width="150px"
+        height="100px"
+        src="images/5ea9a2c7-bd2e-46b0-b858-701f9cfbd7b1.png"
+        alt="banner"
+      />
+    </div>
+    <!-- .box de imagem -->
 
+    <!-- Box de Apresentação -->
+    <div id="presentation-box">
+      <!-- isto é um título que é mostrado na página web -->
+      <h2>Olá Mundo!</h2>
+      <div>
+        <h2>h2 especial</h2>
+      </div>
+    </div>
+    <!-- .Box de Apresentação -->
     <!-- Formulários -->
     <form action="www.ourserver.pt">
-      <input type="text" placeholder="Nome:" required  /><br>
+      <input type="text" placeholder="Nome:" required /><br />
 
-      <label for="task-date">Insira a data de entrega da tarefa:</label><br>
-      <input id="task-date" type="datetime-local" /><br>
+      <label for="task-date">Insira a data de entrega da tarefa:</label><br />
+      <input id="task-date" type="datetime-local" /><br />
 
-      <input type="number" /><br>
+      <input type="number" /><br />
 
-      <input type="password" minlength="6" /><br>
+      <input type="password" minlength="6" /><br />
 
       <button type="submit">Submeter</button>
     </form>
@@ -88,12 +100,12 @@
     </p>
     <hr />
     <!-- Titulos -->
-    <h1>Título h1</h1>
+    <h1 class="yellow-class">Título h1</h1>
     <h6>Título h6</h6>
 
     <!-- PP24 -->
     <div>
-      <h3>Pangolin</h3>
+      <h3 class="yellow-class">Pangolin</h3>
       <h5>Intro</h5>
       <p>
         Pangolins, sometimes known as scaly anteaters, are mammals of the order
@@ -113,7 +125,7 @@
         solitary animals, meeting only to mate and produce a litter of one to
         three offspring, which they raise for about two years.
       </p>
-      <p>
+      <p id="pangolin-special">
         <b>Poaching Pangolins</b> are threatened by poaching (for their meat and
         scales, which are used in Chinese traditional medicine) and heavy
         deforestation of their natural habitats, and are the most trafficked

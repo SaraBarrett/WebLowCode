@@ -1,0 +1,56 @@
+/* pp 9 */
+
+/* h1 {
+    color: #008000;
+}
+
+h2 {
+    color: #ff00ff;
+}
+
+p {
+    color: #ffffff;
+    background-color: #000;
+}
+
+button {
+    color: #ff0000;
+    background-color: #ffc0cb;
+} */
+
+
+/* pp18 */
+
+/* h1 {
+    font-family: monoscope;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline wavy plum;
+    letter-spacing: 20px;
+} */
+
+
+/* pp 26 */
+.square:nth-of-type(even) {
+    background-color: black;
+}
+
+.square:nth-of-type(odd) {
+    background-color: red;
+}
+
+/* pp 34 */
+.card {
+    width: 210px;
+    border: solid grey 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    border: solid rgb(236, 183, 191) 5px;
+}
