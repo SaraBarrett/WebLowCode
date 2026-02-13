@@ -46,10 +46,18 @@ h6 {
     border: solid black 5px;
     border-radius: 15%;
     text-align: center;
+    margin: 5% auto;
 }
 
 #presentation-box {
+    padding: 10px 0px 0px 15px;
     width: 200px;
     height: 200px;
     background-color: brown;
+}
+
+img{
+    position: sticky;
+    top: 80px;
+    left: 10px;
 }
