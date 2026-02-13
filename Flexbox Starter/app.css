@@ -13,9 +13,13 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     justify-content: center;
+    display: flex;
+    justify-content:space-between;
 }
 
 #container div {
     width: 200px;
     height: 200px;
 }
+
+

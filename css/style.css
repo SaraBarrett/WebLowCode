@@ -56,8 +56,25 @@ h6 {
     background-color: brown;
 }
 
-img{
+img {
     position: sticky;
     top: 80px;
     left: 10px;
+}
+
+/* media queries ( aplicação visual em casos específicos: mobile, print) */
+@media print {
+    #nav {
+        display: none;
+    }
+
+    .yellow-class {
+        color: red;
+    }
+}
+
+@media (max-width: 500px){
+    #image-box {
+        background-color: aquamarine;
+    }
 }
