@@ -5,163 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Low Code</title>
     <link rel="shortcut icon" href="images/internet.png" type="image/x-icon" />
+    <!-- link css bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
 
+    <!-- link nosso css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h6 id="nav">
-      <a href="pages/contact.html"> Contactos 📳 </a> |
-      <a href="https://www.google.pt">Google </a> |
-      <a href="#good-movies">Good Movies</a> |
-      <a href="pages/linksAndImages.html">Lobos</a> |
-      <a href="pages/subscriptionTable.html">Tabelas</a> |
-      <a href="pages/formularios.html">Formulários</a> |
-      <a href="pages/cores.html"></a>
-    </h6>
-    <!-- box de imagem -->
-    <div id="image-box">
-      <img
-        width="150px"
-        height="100px"
-        src="images/5ea9a2c7-bd2e-46b0-b858-701f9cfbd7b1.png"
-        alt="banner"
-      />
-    </div>
-    <!-- .box de imagem -->
-
-    <!-- Box de Apresentação -->
-    <div id="presentation-box">
-      <!-- isto é um título que é mostrado na página web -->
-      <h2>Olá Mundo!</h2>
-      <div>
-        <h2>h2 especial</h2>
+    <!-- Navbar do Bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- .Box de Apresentação -->
-    <!-- Formulários -->
-    <form action="www.ourserver.pt">
-      <input type="text" placeholder="Nome:" required /><br />
+    </nav>
+    <!-- .Navbar do Bootstrap -->
 
-      <label for="task-date">Insira a data de entrega da tarefa:</label><br />
-      <input id="task-date" type="datetime-local" /><br />
+    <div class="container">
+      <button class="btn btn-success">Bootstrap</button>
+      <h6 id="nav">
+        <a href="pages/contact.html"> Contactos 📳 </a> |
+        <a href="https://www.google.pt">Google </a> |
+        <a href="#good-movies">Good Movies</a> |
+        <a href="pages/linksAndImages.html">Lobos</a> |
+        <a href="pages/subscriptionTable.html">Tabelas</a> |
+        <a href="pages/formularios.html">Formulários</a> |
+        <a href="pages/cores.html"></a>
+      </h6>
+      <!-- box de imagem -->
+      <div id="image-box">
+        <img
+          width="150px"
+          height="100px"
+          src="images/5ea9a2c7-bd2e-46b0-b858-701f9cfbd7b1.png"
+          alt="banner"
+        />
+      </div>
+      <!-- .box de imagem -->
 
-      <input type="number" /><br />
+      <!-- Box de Apresentação -->
+      <div id="presentation-box">
+        <!-- isto é um título que é mostrado na página web -->
+        <h2>Olá Mundo!</h2>
+        <div>
+          <h2>h2 especial</h2>
+        </div>
+      </div>
+      <!-- .Box de Apresentação -->
+      <!-- Formulários -->
+      <form action="www.ourserver.pt">
+        <input type="text" placeholder="Nome:" required /><br />
 
-      <input type="password" minlength="6" /><br />
+        <label for="task-date">Insira a data de entrega da tarefa:</label><br />
+        <input id="task-date" type="datetime-local" /><br />
 
-      <button type="submit">Submeter</button>
-    </form>
+        <input type="number" /><br />
 
-    <p>
-      A turma de <b>Low Code</b> vai ter muito
-      <span>sucesso profissional!</span>
-    </p>
+        <input type="password" minlength="6" /><br />
 
-    <h4>Módulos da Turma</h4>
-    <!-- Tabelas -->
-    <table border="1px">
-      <thead>
-        <tr>
-          <td>Nome da Disciplina</td>
-          <td>Formadora</td>
-          <td>Horas do Módulo</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Web</td>
-          <td>Sara Monteiro</td>
-          <td>75h</td>
-        </tr>
-        <tr>
-          <td>Algoritmia</td>
-          <td>Ana Martelo</td>
-          <td>50h</td>
-        </tr>
-        <tr>
-          <td>Bases de dados</td>
-          <td>Ana Faria</td>
-          <td>50h</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total Módulos:</td>
-          <td colspan="2" align="center">3</td>
-        </tr>
-      </tfoot>
-    </table>
-    <!-- .Tabelas -->
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-      consequuntur consequatur dolor, unde pariatur exercitationem fugiat alias
-      a maiores ipsa commodi, amet quibusdam beatae ipsum tenetur corporis
-      voluptas, quo aut?
-    </p>
-    <hr />
-    <!-- Titulos -->
-    <h1 class="yellow-class">Título h1</h1>
-    <h6>Título h6</h6>
+        <button type="submit">Submeter</button>
+      </form>
 
-    <!-- PP24 -->
-    <div>
-      <h3 class="yellow-class">Pangolin</h3>
-      <h5>Intro</h5>
       <p>
-        Pangolins, sometimes known as scaly anteaters, are mammals of the order
-        Pholidota (from Ancient Greek φολῐ́ς, "horny scale"). The one extant
-        family, Manidae, has three genera: Manis, Phataginus and Smutsia. Manis
-        comprises the four species found in Asia, while Phataginus and Smutsia
-        include two species each, all found in Sub-Saharan Africa. These species
-        range in size from 30 to 100 cm (12 to 39 in). A number of extinct
-        pangolin species are also known. Description Pangolins have large,
-        protective keratin scales covering their skin; they are the only known
-        mammals with this feature.
+        A turma de <b>Low Code</b> vai ter muito
+        <span>sucesso profissional!</span>
       </p>
+
+      <h4>Módulos da Turma</h4>
+      <!-- Tabelas -->
+      <table border="1px">
+        <thead>
+          <tr>
+            <td>Nome da Disciplina</td>
+            <td>Formadora</td>
+            <td>Horas do Módulo</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web</td>
+            <td>Sara Monteiro</td>
+            <td>75h</td>
+          </tr>
+          <tr>
+            <td>Algoritmia</td>
+            <td>Ana Martelo</td>
+            <td>50h</td>
+          </tr>
+          <tr>
+            <td>Bases de dados</td>
+            <td>Ana Faria</td>
+            <td>50h</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total Módulos:</td>
+            <td colspan="2" align="center">3</td>
+          </tr>
+        </tfoot>
+      </table>
+      <!-- .Tabelas -->
       <p>
-        They live in hollow trees or burrows, depending on the species.
-        Pangolins are nocturnal, and their diet consists of mainly ants and
-        termites, which they capture using their long tongues. They tend to be
-        solitary animals, meeting only to mate and produce a litter of one to
-        three offspring, which they raise for about two years.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+        consequuntur consequatur dolor, unde pariatur exercitationem fugiat
+        alias a maiores ipsa commodi, amet quibusdam beatae ipsum tenetur
+        corporis voluptas, quo aut?
       </p>
-      <p id="pangolin-special">
-        <b>Poaching Pangolins</b> are threatened by poaching (for their meat and
-        scales, which are used in Chinese traditional medicine) and heavy
-        deforestation of their natural habitats, and are the most trafficked
-        mammals in the world.As of January 2020, of the eight species of
-        pangolin, three (Manis culionensis, M. pentadactyla and M. javanica) are
-        listed as critically endangered, three (Phataginus tricuspis, Manis
-        crassicaudata and Smutsia gigantea) are listed as endangered and two
-        (Phataginus tetradactyla and Smutsia temminckii) are listed as
-        vulnerable on the Red List of Threatened Species of the International
-        Union for Conservation of Nature.
-      </p>
+      <hr />
+      <!-- Titulos -->
+      <h1 class="yellow-class">Título h1</h1>
+      <h6>Título h6</h6>
+
+      <!-- PP24 -->
+      <div>
+        <h3 class="yellow-class">Pangolin</h3>
+        <h5>Intro</h5>
+        <p>
+          Pangolins, sometimes known as scaly anteaters, are mammals of the
+          order Pholidota (from Ancient Greek φολῐ́ς, "horny scale"). The one
+          extant family, Manidae, has three genera: Manis, Phataginus and
+          Smutsia. Manis comprises the four species found in Asia, while
+          Phataginus and Smutsia include two species each, all found in
+          Sub-Saharan Africa. These species range in size from 30 to 100 cm (12
+          to 39 in). A number of extinct pangolin species are also known.
+          Description Pangolins have large, protective keratin scales covering
+          their skin; they are the only known mammals with this feature.
+        </p>
+        <p>
+          They live in hollow trees or burrows, depending on the species.
+          Pangolins are nocturnal, and their diet consists of mainly ants and
+          termites, which they capture using their long tongues. They tend to be
+          solitary animals, meeting only to mate and produce a litter of one to
+          three offspring, which they raise for about two years.
+        </p>
+        <p id="pangolin-special">
+          <b>Poaching Pangolins</b> are threatened by poaching (for their meat
+          and scales, which are used in Chinese traditional medicine) and heavy
+          deforestation of their natural habitats, and are the most trafficked
+          mammals in the world.As of January 2020, of the eight species of
+          pangolin, three (Manis culionensis, M. pentadactyla and M. javanica)
+          are listed as critically endangered, three (Phataginus tricuspis,
+          Manis crassicaudata and Smutsia gigantea) are listed as endangered and
+          two (Phataginus tetradactyla and Smutsia temminckii) are listed as
+          vulnerable on the Red List of Threatened Species of the International
+          Union for Conservation of Nature.
+        </p>
+      </div>
+
+      <!-- listas -->
+      <ul>
+        <li>batatas</li>
+        <li>feijão</li>
+        <li>chocolate</li>
+      </ul>
+
+      <!-- pp29 -->
+      <h1>Movies</h1>
+      <h2>My Top 3 Movies:</h2>
+      <ol>
+        <li>Amadeus</li>
+        <li>Stand By Me</li>
+        <li>Amelie</li>
+      </ol>
+
+      <h2 id="good-movies">Other Good Movies:</h2>
+      <ul>
+        <li>Alien</li>
+        <li>Parasite</li>
+        <li>Annie Hall</li>
+      </ul>
+
+      <a href="#nav">Top</a>
     </div>
-
-    <!-- listas -->
-    <ul>
-      <li>batatas</li>
-      <li>feijão</li>
-      <li>chocolate</li>
-    </ul>
-
-    <!-- pp29 -->
-    <h1>Movies</h1>
-    <h2>My Top 3 Movies:</h2>
-    <ol>
-      <li>Amadeus</li>
-      <li>Stand By Me</li>
-      <li>Amelie</li>
-    </ol>
-
-    <h2 id="good-movies">Other Good Movies:</h2>
-    <ul>
-      <li>Alien</li>
-      <li>Parasite</li>
-      <li>Annie Hall</li>
-    </ul>
-
-    <a href="#nav">Top</a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
