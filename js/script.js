@@ -1,3 +1,8 @@
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+
 //primeira linha de código JS
 let firstCode = "hello world";
 let className = "Low Code";
@@ -94,18 +99,17 @@ number = 8;
 // }
 
 //array de strings
-let alunos = ['Maria Cardoso', 'Bruno Azevedo', 'Beatriz Afonso'];
+let alunos = ["Maria Cardoso", "Bruno Azevedo", "Beatriz Afonso"];
 
 //array de números
 let notas = [20, 15, 9];
 
 //array com vários tipos de dados: string, número e boleano
-let mixedArray=['Cesae', 15, true]; 
+let mixedArray = ["Cesae", 15, true];
 
 //alert(`a aluna ${alunos[2]} tem nota ${notas[2]}`);
 
-alunos[1] = 'Bruno Silva';
-
+alunos[1] = "Bruno Silva";
 
 // //perguntar ao user que index quer alterar
 // let index = prompt('qual é o index a alterar?');
@@ -120,14 +124,33 @@ alunos[1] = 'Bruno Silva';
 //alert(alunos);
 
 //adicionar no fim do array
-alunos.push('Andreia Ricardo');
-
+alunos.push("Andreia Ricardo");
 
 //Perguntar ao utilziador o nome que quer adicionar
-let pushName = prompt('Qual é o novo aluno?');
-alunos.push(pushName)
-
+// let pushName = prompt('Qual é o novo aluno?');
+// alunos.push(pushName)
 
 //remover do início
-alunos.shift()
-alert(alunos);
+// alunos.shift()
+// alert(alunos);
+
+// let courses = [
+//   ["css", "html"],
+//   "bases de dados",
+//   "Inglês",
+//   ["funções", "tipos de dados","ciclos"]
+// ];
+
+// alert(courses[1])
+
+let meals = [
+  "Arroz e feijão",
+  "lasanha",
+  "ramen",
+  "pizza",
+  "salada de feijão frade",
+  "francesinha",
+];
+
+let randomIndex = meals[getRandomInt(meals.length)];
+alert(`o prato do dia é ${randomIndex}`);

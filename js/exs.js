@@ -46,34 +46,64 @@
 // Depositar dinheiro: lance um alerta a indicar 'depósito de 600euros efectuado!'
 // Se for menor, mostre: "Acesso negado"
 
-let userName = prompt("qual é o seu nome?");
-let userAge = prompt("qual é a sua idade?");
+// let userName = prompt("qual é o seu nome?");
+// let userAge = prompt("qual é a sua idade?");
 
-if (userAge > 17) {
-  //bloco de código para a condição maiores de idade
-  alert(userName + " tens acesso");
+// if (userAge > 17) {
+//   //bloco de código para a condição maiores de idade
+//   alert(userName + " tens acesso");
 
-  //perguntar ao user maior de idade que operação ele quer
-  let option = prompt(
-    "que operação pretende efectuar? \n 1-ver saldo \n 2-Fazer Levantamentos \n 3-depositar dinheiro",
-  );
+//   //perguntar ao user maior de idade que operação ele quer
+//   let option = prompt(
+//     "que operação pretende efectuar? \n 1-ver saldo \n 2-Fazer Levantamentos \n 3-depositar dinheiro",
+//   );
 
-  switch (option) {
-    case "1":
-      alert(userName + " tens 10.000 de euros");
-      break;
-    case "2":
-      let value = prompt("quanto quer levantar?");
-      alert(
-        "levantou " + value + " ,tem disponível " + parseInt(10000 - value),
-      );
-      break;
-    case "3":
-      alert("depósito de 600euros efectuado!");
-      break;
-    default:
-      alert("Opção inválida");
-  }
-} else {
-  alert(userName + " lamento mas não tens acesso a esta funcionalidade");
-}
+//   switch (option) {
+//     case "1":
+//       alert(userName + " tens 10.000 de euros");
+//       break;
+//     case "2":
+//       let value = prompt("quanto quer levantar?");
+//       alert(
+//         "levantou " + value + " ,tem disponível " + parseInt(10000 - value),
+//       );
+//       break;
+//     case "3":
+//       alert("depósito de 600euros efectuado!");
+//       break;
+//     default:
+//       alert("Opção inválida");
+//   }
+// } else {
+//   alert(userName + " lamento mas não tens acesso a esta funcionalidade");
+// }
+
+//pp36
+// let planetas = [
+//   "Mercúrio",
+//   "Vénus",
+//   "Terra",
+//   "Mart",
+//   "Jupiter",
+//   "Saturno",
+//   "Urano",
+//   "Neptuno",
+//   "Plutão",
+// ];
+
+// planetas[3] = "Marte";
+// planetas.pop();
+// planetas.unshift("laranjas");
+// alert(planetas);
+
+
+const airplaneSeats = [
+  ["Ruth", "Anthony", "Stevie"],
+  ["Amelia", "Pedro", "Maya"],
+  ["Xavier", "Ananya", "Luis"],
+  ["Luke", null, "Deniz"],
+  ["Rin", "Sakura", "Francisco"],
+];
+
+airplaneSeats[3][1] = 'Sara';
+console.log(airplaneSeats)
