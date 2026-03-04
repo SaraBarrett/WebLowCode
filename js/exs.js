@@ -96,14 +96,45 @@
 // planetas.unshift("laranjas");
 // alert(planetas);
 
+// const airplaneSeats = [
+//   ["Ruth", "Anthony", "Stevie"],
+//   ["Amelia", "Pedro", "Maya"],
+//   ["Xavier", "Ananya", "Luis"],
+//   ["Luke", null, "Deniz"],
+//   ["Rin", "Sakura", "Francisco"],
+// ];
 
-const airplaneSeats = [
-  ["Ruth", "Anthony", "Stevie"],
-  ["Amelia", "Pedro", "Maya"],
-  ["Xavier", "Ananya", "Luis"],
-  ["Luke", null, "Deniz"],
-  ["Rin", "Sakura", "Francisco"],
-];
+// airplaneSeats[3][1] = 'Sara';
+// console.log(airplaneSeats)
 
-airplaneSeats[3][1] = 'Sara';
-console.log(airplaneSeats)
+//pp 44
+// let product = {
+//   pname: "Lápis",
+//   inStock: true,
+//   price: 1.99,
+//   colors: ["vermelho", "azul", "verde"],
+// };
+// product.price = 2.55
+// console.log(product.price,product.colors[2])
+
+// Palavra-passe
+// a) Cria um script que:
+// • Define uma palavra-passe correta, por exemplo "segredo123";
+// • Usa um ciclo while para pedir a palavra-passe ao utilizador até ele acertar;
+// • Sempre que erra, mostra "Palavra-passe errada, tenta novamente";
+// • Quando acerta, mostra "Acesso concedido" e termina o ciclo.
+// b) Adiciona uma limitação de tentativas:
+// • Máximo de 3 tentativas;
+// • Se falhar 3 vezes, mostra "Conta bloqueada" e termina sem conceder acesso
+
+
+
+// Construa uma lista de compras.
+// Dicas:
+// A lista é um array.
+// Fazer prompt para o utilizador adicionar items na lista, e
+// adicionar esses items ao array.
+// Criar uma variável "código" e se o utilizador digitar isso, o
+// ciclo acaba e a lista aparece. Por exemplo, se digitar 'fim',
+// deixam de aparecer prompts
+

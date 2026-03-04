@@ -2,7 +2,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-
 //primeira linha de código JS
 let firstCode = "hello world";
 let className = "Low Code";
@@ -143,14 +142,49 @@ alunos.push("Andreia Ricardo");
 
 // alert(courses[1])
 
-let meals = [
-  "Arroz e feijão",
-  "lasanha",
-  "ramen",
-  "pizza",
-  "salada de feijão frade",
-  "francesinha",
-];
+// let meals = [
+//   "Arroz e feijão",
+//   "lasanha",
+//   "ramen",
+//   "pizza",
+//   "salada de feijão frade",
+//   "francesinha",
+// ];
 
-let randomIndex = meals[getRandomInt(meals.length)];
-alert(`o prato do dia é ${randomIndex}`);
+// let randomIndex = meals[getRandomInt(meals.length)];
+// alert(`o prato do dia é ${randomIndex}`);
+
+//object Literals
+// let course = {
+//   cname: "Programador de Low Code",
+//   responsible: "Inês Castro",
+//   hours: 1100,
+//   modules: ["Programação Web", "Algoritimia", "Inglês"],
+// };
+
+// //reasignar novos valores
+// course.hours = 1150;
+
+// //pergunta ao utilizador o módulo a acrescentar
+// //let newModule = prompt('qual é o módulo a adicionar?');
+
+// course.modules.push(prompt('qual é o módulo a adicionar?'));
+// alert(course.modules)
+
+// //chamar pelos dados dentro de um objecto
+// alert(
+//   "o curso de " +
+//     course.cname +
+//     " e tem " +
+//     course.hours +
+//     "h e o módulo mais importante é " +
+//     course.modules[1],
+// );
+
+let pass = 1;
+
+while (pass.length <4) {
+ pass = prompt("a pass não tem pelo menos 4caracteres. Insira uma nova pass");
+}
+
+alert('pass ok');
