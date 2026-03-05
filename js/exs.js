@@ -127,8 +127,6 @@
 // • Máximo de 3 tentativas;
 // • Se falhar 3 vezes, mostra "Conta bloqueada" e termina sem conceder acesso
 
-
-
 // Construa uma lista de compras.
 // Dicas:
 // A lista é um array.
@@ -138,3 +136,39 @@
 // ciclo acaba e a lista aparece. Por exemplo, se digitar 'fim',
 // deixam de aparecer prompts
 
+//ex lista compras - pp 52
+// let shoppingList = [];
+// let item = "";
+
+// while (item != "fim") {
+//   item = prompt("qual é o item?Quando acabar, digite fim").toLowerCase().trim();
+//   if (item != "fim") {
+//     shoppingList.push(item);
+//   }
+// }
+
+// alert(shoppingList);
+
+//pp51
+// const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+
+// for(let item of people){
+//   alert(item.toUpperCase());
+// }
+
+// for(let i=0; people.length; i++){
+//    alert(people[i].toUpperCase());
+// }
+
+//pp55
+function printHeart() {
+  alert("❤️");
+}
+
+
+//pp59
+function rant(message, numTimes) {
+  for (let i = 0; i < numTimes; i++) {
+    alert(("odeio " + message).toUpperCase());
+  }
+}

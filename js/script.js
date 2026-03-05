@@ -181,10 +181,33 @@ alunos.push("Andreia Ricardo");
 //     course.modules[1],
 // );
 
-let pass = 1;
+// let pass = 1;
 
-while (pass.length <4) {
- pass = prompt("a pass não tem pelo menos 4caracteres. Insira uma nova pass");
+// while (pass.length <4) {
+//  pass = prompt("a pass não tem pelo menos 4caracteres. Insira uma nova pass");
+// }
+
+// alert('pass ok');
+
+//ciclos for tradicionais (para todas as linguagens)
+// for(let count = 10; count>0; count= count-2){
+//   alert(count);
+// }
+
+// let shoppingList = ['bananas', 'maçãs','salada','sopa'];
+// alert('comprar '+shoppingList[0])
+// alert('comprar '+shoppingList[1])
+// alert('comprar '+shoppingList[2])
+
+// for(let count=0; count<shoppingList.length;count++){
+//   alert('comprar '+shoppingList[count])
+// }
+// for(let element of shoppingList){
+//   alert('comprar '+element)
+// }
+
+//funções
+function hello(helloName) {
+  
+  alert("hello "+helloName);
 }
-
-alert('pass ok');

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- JS-->
-    <script src="js/script.js" defer></script>
+    <script src="js/exs.js" defer></script>
   </head>
   <body>
     <!-- Navbar do Bootstrap -->
@@ -66,7 +66,20 @@
     <!-- .Navbar do Bootstrap -->
 
     <div class="container">
-      <button class="btn btn-success">Bootstrap</button>
+      <button onclick="hello('world')" class="btn btn-success">Hello</button>
+      <button onclick="printHeart()" class="btn btn-danger">🥰</button>
+      <button onclick="hello('Turma de Low Code')" class="btn btn-info">
+        Olá Low Code
+      </button>
+      <button
+        onclick="hello('Turma de Software Developer')"
+        class="btn btn-info"
+      >
+        Olá Software Developer
+      </button>
+      <button onclick="hello('Turma Multimédia')" class="btn btn-info">    Olá Multimédia</button>
+
+      <button onclick="rant('chuva',3)" class="btn btn-info">Chuva</button>
       <h6 id="nav">
         <a href="pages/contact.html"> Contactos 📳 </a> |
         <a href="https://www.google.pt">Google </a> |
@@ -76,7 +89,7 @@
         <a href="pages/formularios.html">Formulários</a> |
         <a href="pages/cores.html"></a>
       </h6>
-      <input type="color" name="" id="">
+      <input type="color" name="" id="" />
       <!-- box de imagem -->
       <div id="image-box">
         <img
